@@ -20,6 +20,13 @@ export default new Router({
       component: function () { 
         return import(/* webpackChunkName: "about" */ './views/About.vue')
       }
+    },
+    {
+      path: '/game/:gameId',
+      name: 'game',
+      component: function () {
+        return import('./views/Game.vue')
+      }
     }
   ]
 })
