@@ -2,7 +2,7 @@
   <div class="game">
 <div class="row">
     <div class="col-12">
-        <h3> Choose a Card from your hand, then select a card from your opponents hand and click attack!</h3>
+        <h3> Choose a card from your hand, then select a card from your opponents hand and click attack!</h3>
         <button :class="{'btn-success': playerId && opponentId}" class="btn btn-primary" @click="attack">Attack</button>
 
     </div>
