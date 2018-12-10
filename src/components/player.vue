@@ -1,10 +1,11 @@
 <template>
   <div v-if="game.id" class="player container-fluid">
       <div class="row">
-          <div class="col-6">
               <h3>{{game.player.name}}'s Hand</h3>
+            </div>
+              <div class="row">
               <div v-for="card in playersCards" @click="setActivePlayer(card.id)">
-                    <div class="card mb-2" style="min-width: 10rem">
+                    <div class="card mb-2 mr-2" style="min-width: 12rem">
                   {{card.name}}
                   <img :src="card.img" height="150">
 
@@ -17,7 +18,8 @@
 
                 </div>
               </div>
-          </div>
+            </div>
+          
       </div>
 
   </div>

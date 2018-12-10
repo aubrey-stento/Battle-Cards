@@ -7,15 +7,14 @@
 
     </div>
 </div>
-<div class="row justify-content-center">
-        <player class="col-6"></player>
-        
-        <opponent class="col-6"></opponent>
-
+<div class="row">
+        <player class="col-8 justify-content-center"></player>
+        <opponent class="col-8 justify-content-center"></opponent>
     </div>
 
+
   </div>
-  </div>
+  
 </template>
 
 <script>
@@ -60,7 +59,8 @@ import Opponent from '@/components/opponent.vue'
     // <div v-if=“!game.over”>
     //  <div class=“row justify-content-center d-block”>
     //    <h1>Let’s Battle</h1>
-// v-else=“game.over”
+    // v-else=“game.over”
+            // I DONT KNOW HOW TO MAKE THIS WORK
     },
     components: {
         Player,
