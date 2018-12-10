@@ -1,17 +1,19 @@
 <template>
-  <div class="game">
-<div class="row">
-    <div class="col-12">
+  <div class="game bg-secondary">
+<div class="row justify-content-center">
+    <div class="col-12 text-white font-weight-bold">
         <h3> Choose a card from your hand, then select a card from your opponents hand and click attack!</h3>
         <button :class="{'btn-success': playerId && opponentId}" class="btn btn-primary" @click="attack">Attack</button>
 
     </div>
+</div>
+<div class="row justify-content-center">
         <player class="col-6"></player>
+        
         <opponent class="col-6"></opponent>
 
+    </div>
 
-
-</div>
   </div>
   </div>
 </template>
@@ -54,6 +56,11 @@ import Opponent from '@/components/opponent.vue'
     //     ready() {
     //     return this.newGame.playerId > -1 && this.newGame.opponentId > -1
     //   }
+
+    // <div v-if=“!game.over”>
+    //  <div class=“row justify-content-center d-block”>
+    //    <h1>Let’s Battle</h1>
+// v-else=“game.over”
     },
     components: {
         Player,

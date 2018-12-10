@@ -4,9 +4,9 @@
           <div class="col-6">
               <h3>{{game.player.name}}'s Hand</h3>
               <div v-for="card in playersCards" @click="setActivePlayer(card.id)">
-                    <div class="card mb-2">
+                    <div class="card mb-2" style="min-width: 10rem">
                   {{card.name}}
-                  <img :src="card.img">
+                  <img :src="card.img" height="150">
 
                   <p> Health: {{card.health}}</p>
                    <p>Defense: {{card.defense}} </p>  
